@@ -14,7 +14,7 @@ The website is designed for students who know basic linear algebra but may not h
 
 ## Methodology
 
-The implementation uses a small two-dimensional teaching model. Each candidate vector is restricted to the unit circle:
+We solve the toy NEPv using a simple self-consistent field (SCF) iteration with mixing. The implementation uses a small two-dimensional teaching model. Each candidate vector is restricted to the unit circle:
 
 ```text
 x(theta) = [cos(theta), sin(theta)]
@@ -84,12 +84,12 @@ The visual design uses a clean glass-like layout, large readable typography, and
 
 - The model is a two-dimensional teaching toy, not a production solver.
 - Real NEPv systems can be high-dimensional and may require specialized algorithms.
-- The app focuses on geometric intuition, not proof of convergence.
+- The app focuses on geometric intuition, not proof of convergence.A large update step may cause the fixed-point iteration to overshoot or fail to converge, so the displayed path should be interpreted as a teaching illustration rather than a guaranteed solver.
 - The displayed iteration is a simple mixed fixed-point update and should not be treated as the best general numerical method.
 
 ## AI Assistance Note
 
-AI was used to help summarize the assignment requirements, draft student-friendly explanations, refine UI copy, and iterate on the front-end layout. The mathematical claims were kept narrow and checked against the cited sources and the actual implementation.
+AI was used to help to provide the framework of the website, refine UI copy, and iterate on the front-end layout. The mathematical claims were kept narrow and checked against the cited sources and the actual implementation.
 
 ## References
 
