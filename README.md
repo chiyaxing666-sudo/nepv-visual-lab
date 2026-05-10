@@ -2,6 +2,9 @@
 
 An interactive website for building intuition about a nonlinear eigenvalue problem with eigenvector dependency (NEPv). The app is intentionally centered on a small, inspectable toy model rather than a production-grade solver. The goal is to make the feedback loop visible: the operator changes when the current eigenvector estimate changes, which turns the problem into a self-consistency search.
 
+## Link of the website
+
+https://chiyaxing666-sudo.github.io/nepv-visual-lab/
 
 ## Clone, Install, and Run
 
