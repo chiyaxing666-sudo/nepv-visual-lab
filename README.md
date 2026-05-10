@@ -2,13 +2,9 @@
 
 An interactive website for building intuition about a nonlinear eigenvalue problem with eigenvector dependency (NEPv). The app is intentionally centered on a small, inspectable toy model rather than a production-grade solver. The goal is to make the feedback loop visible: the operator changes when the current eigenvector estimate changes, which turns the problem into a self-consistency search.
 
-Live task fit:
+## Link of the website
 
-- Interactive website: yes
-- Focus topic: nonlinear eigenvalue problem with eigenvector dependency
-- Runnable from the repo: yes
-- README sections requested in the prompt: included below
-- AI note: included below
+https://chiyaxing666-sudo.github.io/nepv-visual-lab/
 
 ## Clone, Install, and Run
 
@@ -55,6 +51,8 @@ where `v` is restricted to a unit vector parameterized by an angle on the circle
 - the next iterate of a simple SCF-style fixed-point update with mixing
 
 ## Methodology
+
+We solve the toy NEPv using a simple self-consistent field (SCF) iteration with mixing. 
 
 The implementation follows this workflow:
 
@@ -120,11 +118,11 @@ Useful context surfaced by those papers:
 
 AI was used to help with:
 
-- summarizing the assignment constraints into an implementation plan
-- translating source-paper framing into plain-language interface copy
-- drafting and refining the browser interface and README structure
+- cross-checking the mathematical terminology and explanations for consistency.
+- drafting and refining the browser interface 
+- reorganizing the README and report sections so they matched the submission requirements more clearly.
 
-What I verified by hand or directly in code:
+## What I verified by hand or directly in code:
 
 - the app uses an explicitly labeled toy model rather than claiming a faithful physical simulation
 - the iteration logic, residual definition, and eigenvector sign alignment are implemented directly in the code
